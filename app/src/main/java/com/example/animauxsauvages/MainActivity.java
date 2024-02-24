@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Intent intent = new Intent(MainActivity.this, DetailAnimal.class);
         String videoUrl = "";
         String description = "";
-
         if (v.getId() == R.id.img1) {
             videoUrl =  "android.resource://" + getPackageName() + "/raw/elephant";
             description = "Les éléphants sont les plus grands mammifères terrestres du monde, avec leurs défenses distinctives et leurs grandes oreilles. Ils se trouvent dans divers habitats, des forêts tropicales aux savanes et aux déserts.";
@@ -60,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         intent.putExtra("videoUrl", videoUrl);
         intent.putExtra("description", description);
-
         startActivity(intent);
     }
 
